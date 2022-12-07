@@ -6,9 +6,7 @@ The DNN model is already trained by using a seismic demand database that is
 constructed through "Construct_SDDB.py"
 
 The details are found in Section 3 of the following reference.
-Kang, C.1, Kim, T.1, Kwon, O., and Song, J. (2023). Deep neural network-based 
-regional seismic loss assessment considering correlation between EDP residual 
-of building structures, Earthquake Engineering and Structural Dynamics, (Accepted) 
+Kang, C., Kim, T., Kwon, O., and Song, J. (2023). Deep neural network-based regional seismic loss assessment considering correlation between EDP residual of building structures, Earthquake Engineering and Structural Dynamics, https://doi.org/10.1002/eqe.3775.
 
 
 Developed by Taeyong Kim from the University of Toronto
@@ -42,11 +40,11 @@ period_1_i = 0.32; period_i_k = 0.095; damping_k_i = 0.02
 # jth structure
 period_1_j = 3.377; period_j_l = 0.7; damping_l_j = 0.05
 
-Input_DNN = np.array([[np.log(period_1_i), (period_1_i-period_i_k)/period_1_i, damping_k_i],
-                      [np.log(period_1_j), (period_1_j-period_j_l)/period_1_j, damping_l_j]])
+Input_DNN = np.array([[np.log(period_1_i), (period_1_i-period_k_i)/period_1_i, damping_k_i],
+                      [np.log(period_1_j), (period_1_j-period_l_j)/period_1_j, damping_l_j]])
 
-Input_corr = np.array([[np.log(period_1_i), (period_1_i-period_i_k)/period_1_i, damping_k_i,
-                        np.log(period_1_j), (period_1_j-period_j_l)/period_1_j, damping_l_j]])                       
+Input_corr = np.array([[np.log(period_1_i), (period_1_i-period_k_i)/period_1_i, damping_k_i,
+                        np.log(period_1_j), (period_1_j-period_l_j)/period_1_j, damping_l_j]])           
 
 #%% Predict thorugh DNN models
 # Mean
