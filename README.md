@@ -17,6 +17,7 @@ The paper was invited to a special issue “AI and Data-driven Methods in Earthq
 ## Required software and libraries
 Python 3 with Numpy version '1.20.2', Scipy version '1.7.3', Tensorflow version '2.9.1'
 
+Matlab R2022b
 
 OpenSees version '3.3.0'; https://opensees.berkeley.edu/OpenSees/user/download.php
 
@@ -27,4 +28,4 @@ OpenSees version '3.3.0'; https://opensees.berkeley.edu/OpenSees/user/download.p
 
 3. DNN_model2.py: This code helps users how to use the DNN model developed in Section 4 of the authors' paper. The standard deviation and correlation coefficients of the EDP resiudals are predicted from the DNN models.
 
-4. Numerical_example.py: Thiis code copmares the predicted EDP residuals from the DNN model 1 and DNN model 2. Based on this code, users can easily write their own code for their projects or research.
+4. Numerical_example.m: Thiis code copmares the predicted EDP residuals from the DNN model 1 and DNN model 2. Based on this code, users can easily write their own code for their projects or research. Note that Matlab is used to write this code.
