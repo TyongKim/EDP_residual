@@ -1,13 +1,20 @@
 """
-The code predicts the mean, standard deviation, and correlation coefficients of
+The code predicts thestandard deviation, and correlation coefficients of
 the EDP residuals by using three deep neural network (DNN) models.
 
-The DNN model is already trained by using a database consisting 38,000 building structures with 19 building heights (from 2 to 20 stories), 20 damping ratios (from0 to 40%), and 100 artificial variations. By using 1,499 ground motions, 56,962,000 ( = 38, 000 × 1, 499) EDP residuals of the building structures are employed.
+The DNN model is already trained by using a database consisting 38,000 building
+structures with 19 building heights (from 2 to 20 stories), 
+20 damping ratios (from0 to 40%), and 100 artificial variations. 
+By using 1,499 ground motions, 56,962,000 ( = 38, 000 × 1, 499) EDP residuals of 
+the building structures are employed.
 
 The details are found in Section 4 of the following reference.
-Kang, C., Kim, T., Kwon, O., and Song, J. (2023). Deep neural network-based regional seismic loss assessment considering correlation between EDP residual of building structures, Earthquake Engineering and Structural Dynamics, https://doi.org/10.1002/eqe.3775.
+Kang, C., Kim, T., Kwon, O., and Song, J. (2023). Deep neural network-based 
+regional seismic loss assessment considering correlation between EDP residual of 
+building structures, Earthquake Engineering and Structural Dynamics, 
+https://doi.org/10.1002/eqe.3775.
 
-Developed by Chluyoung Kang from Korea Atomic Energy Research Institute (KAERI)
+Developed by Chulyoung Kang from Korea Atomic Energy Research Institute (KAERI)
 Dec 8, 2022
 """
 
