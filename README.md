@@ -24,7 +24,7 @@ OpenSees version '3.3.0'; https://opensees.berkeley.edu/OpenSees/user/download.p
 ## File description
 1. Construct_SDDB.py: This code helps you construct a seismic demand database of linear single-degree-of-freedom (SDOF) systems having different stiffness (or period) and damping coefficients. To run this code, OpenSees is required. Moreover, a set of ground motions needs to be downloaded from the NGA-WEST database.
 
-2. DNN_model1.py: This code helps users how to use the DNN model developed in Section 3 of the authors' paper. The mean, standard deviation, and correlation coefficients of the EDP residulas are predicted from the DNN models.
+2. DNN_model1.py: This code helps users how to use the DNN model developed in Section 3 of the authors' paper. The mean, standard deviation, and correlation coefficients of the EDP residulas are predicted from the DNN models. If some readers would like to see the details of the DNN architecture, please see "DNN_model1_layers.py."
 
 3. DNN_model2.py: This code helps users how to use the DNN model developed in Section 4 of the authors' paper. The standard deviation and correlation coefficients of the EDP resiudals are predicted from the DNN models.
 

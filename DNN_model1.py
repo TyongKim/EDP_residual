@@ -32,19 +32,18 @@ damping = np.asarray([0.00, 0.001, 0.005, 0.010, 0.015,
 NN_model_mean =  keras.models.load_model('DNN_Model1_mean_final.h5')
 NN_model_std =  keras.models.load_model('DNN_Model1_std_final.h5')
 NN_model_corr = keras.models.load_model('DNN_Model1_corr_final.h5')
-NN_model_corr.summary()
 
 #%% Target structural systems (we asuume a certain situation)
 # ith structure
-period_1_i = 0.32; period_i_k = 0.095; damping_k_i = 0.02
+period_1_i = 0.32; period_k_i = 0.095; damping_k_i = 0.02
 # jth structure
 period_1_j = 3.377; period_j_l = 0.7; damping_l_j = 0.05
 
 Input_DNN = np.array([[np.log(period_1_i), (period_1_i-period_k_i)/period_1_i, damping_k_i],
-                      [np.log(period_1_j), (period_1_j-period_l_j)/period_1_j, damping_l_j]])
+                      [np.log(period_1_j), (period_1_j-period_j_l)/period_1_j, damping_l_j]])
 
 Input_corr = np.array([[np.log(period_1_i), (period_1_i-period_k_i)/period_1_i, damping_k_i,
-                        np.log(period_1_j), (period_1_j-period_l_j)/period_1_j, damping_l_j]])           
+                        np.log(period_1_j), (period_1_j-period_j_l)/period_1_j, damping_l_j]])           
 
 #%% Predict thorugh DNN models
 # Mean
